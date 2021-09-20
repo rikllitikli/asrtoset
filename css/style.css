@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 4px 0 8px;
+}
+header p {
+    font-size: 14px;
+    color: #8A8B90;
+    max-width: 211px;
+    font-family: Helvetica;
+}
+header .bottom{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 34px 9px 25px;
+    border: 1px solid #8A8B901A;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+header .bottom i{
+    margin-right: 44px;
+}
+header .bottom:hover{
+    color: black;
+    text-decoration: none;
+}
+header .icon a{
+    text-decoration: none;
+    margin-left: 13px;
+}
+header .icon i{
+    font-size: 16px;
+}
+.list{
+    padding: 22px 0;
+    background-color: #C4C4C433;
+    margin-bottom: 68px;
+}
+.list li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+.list li:after{
+    display: inline-block;
+    content: "";
+    background-color: black;
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+.list a{
+    text-decoration: none;
+    color: #5A5858;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+.screen_one{
+    margin-bottom: 50px;
+}
+.screen_one:after{
+    display: block;
+    content: "";
+    height: 1px;
+    max-width: 1185px;
+    background-color: #8A8B90;
+    margin-top: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.screen_one h5{
+    font-size: 14px;
+    color: #2B2B2B;
+    font-weight: bold;
+    margin-bottom: 39px;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+.screen_one h5:before{
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: #FFC904;
+    margin-right: 11px;
+}
+.screen_one h2{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 14px;
+    color: #2B2B2B;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+.screen_one h3{
+    color: #FFC904;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+form{
+    padding: 32px 23px 20px 31px;
+    background-color: #8A8B901A;
+}
+form h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    line-height: normal;
+    margin-bottom: 15px;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+form p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Akrobat;
+    margin-bottom: 21px;
+}
+form span{
+    color: red;
+}
+form label{
+    display: block;
+    font-size: 14px;
+    color: #5A5858;
+    margin-bottom: 6px;
+    font-family: HelveticaNeueCyr;
+}
+form input{
+    padding: 16px 19px 14px;
+    font-size: 14px;
+    max-width: 397px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #5A5858;
+    border: 1px solid #8A8B90;
+    border-radius: 0;
+}
+form input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+form button{
+    font-size: 24px;
+    padding: 8px 71px;
+    background-color: #FFC904;
+    border: none;
+    font-family: Akrobat;
+    font-weight: bold;
+}
+.tel{
+    margin-bottom: 13px;
+}
+.screen_one img{
+    max-width: 394px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.right p{
+    font-size: 18px;
+    color: #2B2B2B;
+    font-family: Akrobat;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.right p:nth-child(3){
+    font-size: 14px;
+}
+.right span{
+    color: red;
+}
+.screen_two{
+    font-size: 18px;
+    font-family: Akrobat;
+    font-weight: 600;
+    margin-bottom: 29px;
+}

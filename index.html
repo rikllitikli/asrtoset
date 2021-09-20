@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-between align-items-center w-75">
+                <div>
+                    <a href="#0"><img src="img/mou.png"/></a>
+                </div>
+                <div>
+                    <p>Контакт-центр МОЗ з питань захворювання суглобів</p>
+                </div>
+                <div>
+                    <a href="#0" class="bottom"><i class="fas fa-phone-alt"></i>ЗАМОВИТИ ДЗВІНОК</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between icon">
+                <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                <a href="#0"><i class="fab fa-youtube"></i></a>
+                <a href="#0"><i class="fab fa-twitter"></i></a>
+                <a href="#0"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="list">
+    <div class="container">
+        <div class="row">
+            <ul class="d-flex justify-content-between w-100 mb-0 align-items-center">
+                <li class="col text-center"><a href="#0">ГОЛОВНА</a></li>
+                <li class="col text-center"><a href="#0">ТЕРАПІЯ</a></li>
+                <li class="col text-center"><a href="#0">ЗАХВОРЮВАННЯ</a></li>
+                <li class="col text-center"><a href="#0">НАСЛІДКИ</a></li>
+                <li class="col text-center"><a href="#0">ПРО ARTROSET ®</a></li>
+                <li class="col text-center"><a href="#0">УМОВИ ПРОГРАМИ</a></li>
+                <li class="col text-center"><a href="#0">ЗАМОВЛЕННЯ</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="screen_one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>ОСТАННІ НОВИНИ </h5>
+                <h2>МОЗ: завезено 5000 упаковок унікального препарату для лікування суглобів для українців</h2>
+                <h3>У зв'язку з наближенням карантину доступне онлайн-замовлення</h3>
+                <form name="order" action="" method="post">
+                    <h4>Залишайте замовлення і ми зв'яжемось з Вами найближчим часом для оформлення відправки</h4>
+                    <p>Кількість обмежена : <span> ЗАЛИШИЛОСЬ 49 ШТ.</span></p>
+                    <p>Введіть ваші дані для замовлення:</p>
+                    <div>
+                        <label>ПІБ</label>
+                        <input name="name" type="text" placeholder="( Прізвіще, ім’я , по-батькові)">
+                    </div>
+                    <div class="tel">
+                        <label>Ваш телефон:</label>
+                        <input class="input-roulette" id="input-phone" pattern="^\+38\s[\(][0-9]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}$" name="phone" type="tel" required="" autocomplete="off" placeholder="+38" title="Формат: +38 (0XX) XXX-XX-XX" onclick="(function(event) {
+                                                    if (!event.target.value.length) {
+                                                        event.target.value = '+38';
+                                                    }
+                                                })(event)" oninput="(function(event) {
+                                                    const x = event.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                                                    event.target.value = '+38' + (x[4] ? ' (' + x[3] + ') ' : '' + x[3]) + x[4] + (x[5] ? '-' + x[5] : '') + (x[6] ? '-' + x[6] : '');
+                                                })(event)">
+                    </div>
+                    <button>Замовити</button>
+                </form>
+            </div>
+            <div class="col-lg-6 w-100 right">
+                <div class="text-center">
+                    <img src="img/astroset.png"/>
+                </div>
+                <p>ARTROSET ® - унікальний комплекс проти суглобових хвороб не має аналогів на українському ринку.
+                    Даний склад був розроблений і вироблений вченими з США в 2015 році, де пройшов клінічні випробування і вже зараз став доступний в Україні.
+                    Це найновіший препарат для суглобів з найбільшою доведеною ефективністю в світі.</p>
+                <p><span>Важливо:</span> Остерігайтеся підробок, офіційний препарат можно замовити тільки на нашому сайті.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="screen_two">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between w-100 align-items-center">
+                <div class="col-lg-5">
+                    <video width="335" height="229" controls>
+                        <source src="video/astroset.mp4">
+                    </video>
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        Вчені з США спільно з вченими з Австралії розробили препарат, назва якого — «ARTROSET», це винахід, який відновлює та омолоджує ваші суглоби, а також знеболює їх.
+                        </p>
+
+                        <p>В ході клінічних досліджень цього препарату брало участь понад 3000 людей з Австралії та США, з них у 98% пацієнтів через 6 днів зменшилася біль у суглобах, а через півтора місяця у 93% людей суглоби повністю відновилися.
+                        Також препарат отримав всі сертифікати в США та Австралії.
+                            </p>
+
+                    <p> Через 1 рік було опитування серед тих, хто брав участь в клінічних випробуваннях Артосет. 99% людей розказали, що проблем з суглобами за цей час НЕ відбувалося, також з’явилось відчуття, що їх суглоби помолодшали років на 20 мінімум. А в 2021 році цей препарату став № 1 в усьому світу з лікування суглобів.</p>
+
+                        <p>Зараз він активно застосовується в Європі й Канаді, саме тому Україна закупила цей препарат і буде його реалізовувати за програмою 30+, де  потрібно буде платити лише 30% вартості препарату, а решту 70% оплачує фонд МОЗ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/421ca2af13.js" crossorigin="anonymous"></script>
+</body>
+</html>
