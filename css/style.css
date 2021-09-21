@@ -90,6 +90,7 @@ header .icon i{
 .screen_one{
     margin-bottom: 50px;
 }
+
 .screen_one:after{
     display: block;
     content: "";
@@ -210,6 +211,11 @@ form img{
     filter: alpha(Opacity=75); /* Полупрозрачность для IE */
     opacity: 0.75; /* Полупрозрачность для других браузеров */
 }
+@media (max-width: 650px) {
+    form img{
+      display: none;
+    }
+}
 .tel{
     margin-bottom: 13px;
 }
@@ -260,6 +266,12 @@ form img{
     margin-top: 17px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 991px) {
+    .screen_two video{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 .screen_three{
     margin-bottom: 94px;
@@ -314,6 +326,10 @@ form img{
     color: black;
     font-family: Akrobat;
     font-weight: 600;
+}
+.screen_three img{
+    max-width: 489px;
+    width: 100%;
 }
 .screen_four{
     margin-bottom: 62px;
@@ -456,6 +472,11 @@ form img{
     font-weight: bold;
     margin-bottom: 9px;
 }
+@media (max-width: 991px) {
+    .screen_five h3{
+        margin-bottom: 30px;
+    }
+}
 .screen_five .list_two{
     padding: 10px 8px;
     background-color: #FFC904;
@@ -484,6 +505,10 @@ form img{
     font-family: Akrobat;
     font-weight: bold;
     max-width: 501px;
+}
+.screen_five img{
+    max-width: 584px;
+    width: 100%;
 }
 .screen_six{
     margin-bottom: 77px;
@@ -548,6 +573,11 @@ form img{
     font-family: Akrobat;
     font-weight: bold;
 }
+@media (max-width: 991px) {
+    .screen_six .left h5{
+        margin-bottom: 30px;
+    }
+}
 .screen_six .left h5 span{
     color: red;
 }
@@ -580,6 +610,7 @@ form img{
     margin-right: 15px;
 }
 .screen_seven ul{
+    position: relative;
     padding: 13px 15px;
     background-color: #FFC904;
 }
@@ -601,13 +632,23 @@ form img{
     padding-left: 44px;
     margin-bottom: 23px;
 }
-.screen_seven .sertivilat {
-    position: relative;
-}
 .screen_seven .sertivilat img{
     position: absolute;
-    top: -78px;
+    top: -60px;
     right: 0;
+}
+@media (max-width: 1199px) {
+    .screen_seven .sertivilat img{
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
+@media (max-width: 991px) {
+    .screen_seven .sertivilat img{
+        position: relative;
+        margin-bottom: 30px;
+    }
 }
 .screen_seven a{
     padding: 8px 5px;
@@ -618,6 +659,10 @@ form img{
     font-weight: bold;
     background-color: #FFC904;
     margin-left: 44px;
+}
+.screen_seven img{
+    max-width: 468px;
+    width: 100%;
 }
 .screen_eight{
     margin-bottom: 88px;
@@ -769,6 +814,10 @@ form img{
     padding: 8px 5px;
     background-color: #FFC904;
 }
+.screen_nine img{
+    max-width: 494px;
+    width: 100%;
+}
 .screen_ten{
     margin-bottom: 60px;
 }
@@ -831,6 +880,11 @@ form img{
     color: #2B2B2B;
     font-family: Akrobat;
     font-weight: bold;
+}
+@media (max-width: 991px) {
+    .screen_ten .left h5{
+       margin-bottom: 30px;
+    }
 }
 .screen_ten .left h5 span{
     color: red;
