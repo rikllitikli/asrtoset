@@ -5,11 +5,19 @@
 header{
     padding: 4px 0 8px;
 }
-header p {
+header .header{
+    max-width: 612px;
+}
+header .header_p {
     font-size: 14px;
     color: #8A8B90;
     max-width: 211px;
     font-family: Helvetica;
+}
+@media (max-width: 991px) {
+    header .header_p {
+       margin-bottom: 0;
+    }
 }
 header .bottom{
     font-size: 20px;
@@ -21,8 +29,19 @@ header .bottom{
     font-family: Akrobat;
     font-weight: bold;
 }
+@media (max-width: 767px) {
+    header .bottom{
+        font-size: 14px;
+        padding: 9px 9px;
+    }
+}
 header .bottom i{
     margin-right: 44px;
+}
+@media (max-width: 497px) {
+    header .bottom i{
+        margin-right: 0;
+    }
 }
 header .bottom:hover{
     color: black;
@@ -34,6 +53,11 @@ header .icon a{
 }
 header .icon i{
     font-size: 16px;
+}
+@media (max-width: 991px) {
+    header .icon{
+        display: none;
+    }
 }
 .list{
     padding: 22px 0;
@@ -125,6 +149,7 @@ form h4{
     margin-bottom: 15px;
     font-family: Akrobat;
     font-weight: bold;
+    max-width: 390px;
 }
 form p{
     font-size: 16px;

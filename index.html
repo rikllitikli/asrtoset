@@ -17,18 +17,53 @@
     <div class="container">
         <div class="row">
             <div class="d-flex justify-content-between align-items-center w-100">
-            <div class="d-flex justify-content-between align-items-center w-75">
                 <div>
                     <a href="#0"><img src="img/mou.png"/></a>
                 </div>
-                <div>
-                    <p>Контакт-центр МОЗ з питань захворювання суглобів</p>
+                <div class="d-lg-flex justify-content-between w-100 header">
+                    <div>
+                        <p class="header_p">Контакт-центр МОЗ з питань захворювання суглобів</p>
+                    </div>
+                    <div>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-phone-alt"></i>ЗАМОВИТИ ДЗВІНОК</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form name="order" action="" method="post">
+                                            <h4>Бажаєте отримати консультацію про препарат ARTROSET ® ?</h4>
+                                            <p>Введіть ваші дані та ми зв’яжемось з Вами протягом
+                                                найближчого часу:</p>
+                                            <div>
+                                                <label>ПІБ</label>
+                                                <input name="name" type="text" placeholder="( Прізвіще, ім’я , по-батькові)">
+                                            </div>
+                                            <div class="tel">
+                                                <label>Ваш телефон:</label>
+                                                <input class="input-roulette" id="input-phone" pattern="^\+38\s[\(][0-9]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}$" name="phone" type="tel" required="" autocomplete="off" placeholder="+38" title="Формат: +38 (0XX) XXX-XX-XX" onclick="(function(event) {
+                                                    if (!event.target.value.length) {
+                                                        event.target.value = '+38';
+                                                    }
+                                                })(event)" oninput="(function(event) {
+                                                    const x = event.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                                                    event.target.value = '+38' + (x[4] ? ' (' + x[3] + ') ' : '' + x[3]) + x[4] + (x[5] ? '-' + x[5] : '') + (x[6] ? '-' + x[6] : '');
+                                                })(event)">
+                                            </div>
+                                            <button>Замовити</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="#0" class="bottom"><i class="fas fa-phone-alt"></i>ЗАМОВИТИ ДЗВІНОК</a>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between icon">
+            <div class="d-lg-flex justify-content-between icon">
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
                 <a href="#0"><i class="fab fa-youtube"></i></a>
                 <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -42,20 +77,20 @@
     <div class="container">
         <div class="row">
             <ul class="d-flex justify-content-between w-100 mb-0 align-items-center">
-                <li class="col text-center"><a href="#0">ГОЛОВНА</a></li>
-                <li class="col text-center"><a href="#0">ТЕРАПІЯ</a></li>
-                <li class="col text-center"><a href="#0">ЗАХВОРЮВАННЯ</a></li>
-                <li class="col text-center"><a href="#0">НАСЛІДКИ</a></li>
-                <li class="col text-center"><a href="#0">ПРО ARTROSET ®</a></li>
-                <li class="col text-center"><a href="#0">УМОВИ ПРОГРАМИ</a></li>
-                <li class="col text-center"><a href="#0">ЗАМОВЛЕННЯ</a></li>
+                <li class="col text-center"><a href="#home">ГОЛОВНА</a></li>
+                <li class="col text-center"><a href="#THERAPY">ТЕРАПІЯ</a></li>
+                <li class="col text-center"><a href="#CONFLICT">ЗАХВОРЮВАННЯ</a></li>
+                <li class="col text-center"><a href="#CONSEQUENCES">НАСЛІДКИ</a></li>
+                <li class="col text-center"><a href="#about ">ПРО ARTROSET ®</a></li>
+                <li class="col text-center"><a href="#CONDITIONS">УМОВИ ПРОГРАМИ</a></li>
+                <li class="col text-center"><a href="#ORDER">ЗАМОВЛЕННЯ</a></li>
             </ul>
         </div>
     </div>
 </section>
-<section class="screen_one">
+<section class="screen_one" id="home">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex flex-lg-row flex-column-reverse">
             <div class="col-lg-6">
                 <h5>ОСТАННІ НОВИНИ </h5>
                 <h2>МОЗ: завезено 5000 упаковок унікального препарату для лікування суглобів для українців</h2>
@@ -96,15 +131,14 @@
 </section>
 <section class="screen_two">
     <div class="container">
-        <div class="row">
-            <div class="d-flex justify-content-between w-100 align-items-center">
+        <div class="row d-flex align-items-center">
+            <h4 class="text-right col-lg-12">ЧОМУ ARTROSET ®</h4>
                 <div class="col-lg-5 w-100">
                     <video width="335" height="229" controls>
                         <source src="video/astroset.mp4">
                     </video>
                 </div>
                 <div class="col-lg-7">
-                        <h4 class="text-right">ЧОМУ ARTROSET ®</h4>
                     <p>
                         Вчені з США спільно з вченими з Австралії розробили препарат, назва якого — «ARTROSET», це винахід, який відновлює та омолоджує ваші суглоби, а також знеболює їх.
                         </p>
@@ -118,18 +152,14 @@
                         <p>Зараз він активно застосовується в Європі й Канаді, саме тому Україна закупила цей препарат і буде його реалізовувати за програмою 30+, де  потрібно буде платити лише 30% вартості препарату, а решту 70% оплачує фонд МОЗ.
                     </p>
                 </div>
-            </div>
         </div>
     </div>
 </section>
-<section class="screen_three">
+<section class="screen_three" id="THERAPY">
     <div class="container">
         <div class="row">
-            <div class="d-flex flex-column">
-            <h2>ПРО ТЕРАПІЮ З ARTROSET ®</h2>
-            <h4>В комплексній терапії з ARTROSET ® Ви гарантовано позбавитеся від таких хвороб, як:</h4>
-            </div>
-            <div class="d-flex w-100 justify-content-between">
+            <h2 class="col-12">ПРО ТЕРАПІЮ З ARTROSET ®</h2>
+            <h4 class="col-12">В комплексній терапії з ARTROSET ® Ви гарантовано позбавитеся від таких хвороб, як:</h4>
                 <div class="col-lg-7">
                     <ul>
                         <li>Артрит і артроз</li>
@@ -145,17 +175,16 @@
                 </div>
                 <div class="col-lg-5">
                     <img src="img/img_scr_three.jpg"/></div>
-            </div>
         </div>
     </div>
 </section>
-<section class="screen_four">
+<section class="screen_four" id="CONFLICT">
     <div class="container">
         <div class="row">
             <h2 class="text-right col-12">ХВОРОБА,СИМПТОМИ,НАСЛІДКИ</h2>
             <h3 class="col-lg-12">ARTROSET ® ДОПОМОЖЕ, ЯКЩО У ВАС:</h3>
             <div class="owl-carousel">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_screen_four.jpg"/>
                     </div>
@@ -163,10 +192,10 @@
                         <h4>ХВОРОБА: Артрит і артроз</h4>
                         <p><span>СИМПТОМИ: </span>Біль при русі і в стані спокою, хрускіт, утруднений рух, виникнення шпор і кістообразних структур.</p>
                         <p><span>НАСЛІДКИ: </span>Деформація суглоба. Повна нерухомість.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_one.jpg"/>
                     </div>
@@ -174,10 +203,10 @@
                         <h4>ХВОРОБА: Остеохондроз і остеопороз</h4>
                         <p><span>СИМПТОМИ: </span>Періодичне оніміння кінцівок, біль у спині і хребті, біль в області серця і ребер.</p>
                         <p><span>НАСЛІДКИ: </span>Судинні порушення, параліч, протрузія і грижа диска в шийному відділі.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_two.jpg"/>
                     </div>
@@ -185,10 +214,10 @@
                         <h4>ХВОРОБА: Бурсит</h4>
                         <p><span>СИМПТОМИ: </span>Сильний набряк в області пошкодженого суглоба, хворобливі відчуття при пальпації, почервоніння шкіри з нечіткими межами в області пухлини.</p>
                         <p><span>НАСЛІДКИ: </span>Порушення рухливості суглоба або повна нерухомість кінцівки, поразка гноєм тканин, зараження крові, поява свищів, повна втрата рухової здатності суглоба.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_three.jpg"/>
                     </div>
@@ -196,10 +225,10 @@
                         <h4>ХВОРОБА: Синовит</h4>
                         <p><span>СИМПТОМИ: </span>Скутість рухів, біль при пальпації, поразка великих суглобів, інтенсивні неприємні відчуття і набряклість в ураженій області.</p>
                         <p><span>НАСЛІДКИ: </span>Поразка великих суглобів, зараження крові, параліч.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_four.jpg"/>
                     </div>
@@ -207,10 +236,10 @@
                         <h4>ХВОРОБА: Подагра</h4>
                         <p><span>СИМПТОМИ: </span>Гострий приступ, запалення одного або декількох суглобів, почервоніння і набряклість суглоба, підвищення температури тіла і озноб, біль при русі.</p>
                         <p><span>НАСЛІДКИ: </span>Розвиток сечокам'яної хвороби, в важких випадках з результатом в ниркову недостатність, руйнування суглобів, постійні болі, інвалідність.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_five.jpg"/>
                     </div>
@@ -218,10 +247,10 @@
                         <h4>ХВОРОБА: Міжхребцева грижа</h4>
                         <p><span>СИМПТОМИ: </span>Гострий приступ, запалення одного або декількох суглобів, почервоніння і набряклість суглоба, підвищення температури тіла і озноб, біль при русі.</p>
                         <p><span>НАСЛІДКИ: </span>Розвиток сечокам'яної хвороби, в важких випадках з результатом в ниркову недостатність, руйнування суглобів, постійні болі, інвалідність.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_six.jpg"/>
                     </div>
@@ -229,10 +258,10 @@
                         <h4>ХВОРОБА: Коксартроз</h4>
                         <p><span>СИМПТОМИ: </span>Біль в суглобі. Скутість рухів, тугоподвижность суглоба.</p>
                         <p><span>НАСЛІДКИ: </span>Порушення ходи, вкорочення кінцівки на стороні пора вання. Руйнування суглоба. Бурсити. Інвалідність.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <img src="img/img_carusel_seven.jpg"/>
                     </div>
@@ -240,14 +269,14 @@
                         <h4>ХВОРОБА: П'яткова шпора</h4>
                         <p><span>СИМПТОМИ: </span>Гострий біль в стопі.</p>
                         <p><span>НАСЛІДКИ: </span>Порушення ходи. Руйнування фасції. Нагноєння. Некроз тканин.</p>
-                        <a href="#0">Усунути проблему</a>
+                        <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Усунути проблему</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="screen_five">
+<section class="screen_five" id="CONSEQUENCES">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -273,11 +302,10 @@
         </div>
     </div>
 </section>
-<section class="screen_six">
+<section class="screen_six" id="about">
     <div class="container">
         <div class="row">
             <h2 class="text-right col-12">ЗАМОВЛЕННЯ ARTROSET ®</h2>
-            <div class="d-flex justify-content-between w-100">
                 <div class="col-lg-6 left">
                     <div class="list_three">
                         <h4>ARTROSET ®</h4>
@@ -295,7 +323,7 @@
                         Це найновіший препарат для суглобів з найбільшою доведеною ефективністю в світі.</p>
                     <h5><span>Важливо:</span> Остерігайтеся підробок, офіційний препарат можно замовити тільки на нашому сайті.</h5>
                 </div>
-                <div class="col-lg-5 offset-lg-0">
+                <div class="col-lg-5 offset-lg-1">
                     <form name="order" action="" method="post">
                         <h4>Залишайте замовлення і ми зв'яжемось з Вами найближчим часом для оформлення відправки</h4>
                         <p>Кількість обмежена : <span> ЗАЛИШИЛОСЬ 49 ШТ.</span></p>
@@ -321,11 +349,10 @@
                         <img src="img/form_img.png"/>
                     </form>
                 </div>
-            </div>
         </div>
     </div>
 </section>
-<section class="screen_seven">
+<section class="screen_seven" id="CONDITIONS">
     <div class="container">
         <div class="row">
             <h2 class="col-12">ПРО ARTROSET ®</h2>
@@ -345,7 +372,7 @@
             <div class="col-lg-8">
                 <p>Склад: носії сорбітол і ізомальт, глюкозамін, кальцію стеарат, кремнію діоксид, екстракт листя кропиви, мінеральний премікс (кальцію карбонад, калію хлорид, магнію оксид, міді сульфат, марганцю сульфат, калію йодат, натрію селеніт).
                 </p>
-                <a href="#0">Оформити замовлення</a>
+                <a href="#0"class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Оформити замовлення</a>
             </div>
             <div class="col-lg-3 offset-lg-1">
                 <div class="sertivilat">
@@ -355,7 +382,7 @@
         </div>
     </div>
 </section>
-<section class="screen_eight">
+<section class="screen_eight" id="ORDER">
     <div class="container">
         <div class="row">
             <h2 class="col-lg-12 text-right">НАШІ ОФІЦІЙНІ ПАРТНЕРИ</h2>
@@ -413,7 +440,7 @@
                     <li>3. Проковкуйте капсулу, запивши 200 мл чистої негазованої води.</li>
                     <li>4. Приймайте по рекомендації фахівця.</li>
                 </ul>
-                <a href="#0">Оформити замовлення</a>
+                <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal">Оформити замовлення</a>
             </div>
         </div>
     </div>
@@ -474,13 +501,13 @@
     <div class="container">
         <div class="row">
             <ul class="d-flex justify-content-between w-100 mb-0 align-items-center">
-                <li class="col text-center"><a href="#0">ГОЛОВНА</a></li>
-                <li class="col text-center"><a href="#0">ТЕРАПІЯ</a></li>
-                <li class="col text-center"><a href="#0">ЗАХВОРЮВАННЯ</a></li>
-                <li class="col text-center"><a href="#0">НАСЛІДКИ</a></li>
-                <li class="col text-center"><a href="#0">ПРО ARTROSET ®</a></li>
-                <li class="col text-center"><a href="#0">УМОВИ ПРОГРАМИ</a></li>
-                <li class="col text-center"><a href="#0">ЗАМОВЛЕННЯ</a></li>
+                <li class="col text-center"><a href="#home">ГОЛОВНА</a></li>
+                <li class="col text-center"><a href="#THERAPY">ТЕРАПІЯ</a></li>
+                <li class="col text-center"><a href="#CONFLICT">ЗАХВОРЮВАННЯ</a></li>
+                <li class="col text-center"><a href="#CONSEQUENCES">НАСЛІДКИ</a></li>
+                <li class="col text-center"><a href="#about ">ПРО ARTROSET ®</a></li>
+                <li class="col text-center"><a href="#CONDITIONS">УМОВИ ПРОГРАМИ</a></li>
+                <li class="col text-center"><a href="#ORDER">ЗАМОВЛЕННЯ</a></li>
             </ul>
         </div>
     </div>
@@ -490,7 +517,7 @@
         <div class="row">
             <div class="col-lg-4 text-left">
                 <p>01601, м. Київ, вул.Грушевського, 7</p>
-                <a href="#0"><i class="fas fa-phone-alt"></i>ЗАМОВИТИ ДЗВІНОК</a>
+                <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-phone-alt"></i>ЗАМОВИТИ ДЗВІНОК</a>
             </div>
             <div class="col-lg-4 text-center d-flex flex-column justify-content-center">
                 <h4>Політика конфіденційності</h4>
