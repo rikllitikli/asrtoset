@@ -48,4 +48,18 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../font/Akrobat-Light.eot');
+    src: url('../font/Akrobat-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Akrobat-Light.woff2') format('woff2'),
+    url('../font/Akrobat-Light.woff') format('woff'),
+    url('../font/Akrobat-Light.ttf') format('truetype'),
+    url('../font/Akrobat-Light.svg#Akrobat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
