@@ -259,11 +259,11 @@ form img{
     position: absolute;
     bottom: -105px;
     right: -105px;
-    width: 65%;
+    width: 65%!important;
     filter: alpha(Opacity=75); /* Полупрозрачность для IE */
     opacity: 0.75; /* Полупрозрачность для других браузеров */
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     form img{
       display: none;
     }
@@ -545,7 +545,7 @@ form img{
     left: -67px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .screen_four .owl-nav .owl-prev {
         left: 0;
     }
@@ -565,7 +565,7 @@ form img{
     position: absolute;
     right: -66px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .screen_four .owl-nav .owl-next {
         right: 0;
     }
@@ -727,6 +727,11 @@ form img{
     font-family: Akrobat;
     font-weight: bold;
     margin-bottom: 19px;
+}
+@media (max-width: 540px) {
+    .screen_six p{
+        font-size: 14px;
+    }
 }
 .screen_six .left h5{
     font-size: 14px;
@@ -906,7 +911,7 @@ form img{
     position: absolute;
     left: -67px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .screen_eight .owl-nav .owl-prev {
         left: 0;
     }
@@ -925,7 +930,7 @@ form img{
     position: absolute;
     right: -66px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .screen_eight .owl-nav .owl-next {
         right: 0;
     }
@@ -1082,6 +1087,10 @@ form img{
     background-color: #FFC904;
     margin-right: 15px;
 }
+.screen_ten img{
+    max-width: 330px;
+    width: 100%;
+}
 .screen_ten .list_three{
     padding: 13px 39px;
     background-color: #FFC904;
@@ -1110,6 +1119,11 @@ form img{
     font-family: Akrobat;
     font-weight: bold;
     margin-bottom: 19px;
+}
+@media (max-width: 540px) {
+    .screen_ten p{
+        font-size: 14px;
+    }
 }
 .screen_ten .left h5{
     font-size: 14px;
