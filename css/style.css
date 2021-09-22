@@ -59,33 +59,58 @@ header .icon i{
         display: none;
     }
 }
-.list{
-    padding: 22px 0;
-    background-color: #C4C4C433;
-    margin-bottom: 68px;
+.bg-light {
+    padding: 0!important;
+    margin: 0!important;
+    background:none!important;
 }
-.list li{
-    list-style: none;
+.list{
+    background-color: #f3f3f3;
+    padding: 22px 0;
+    margin-bottom: 68px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+@media (max-width: 991px) {
+    .list{
+        padding: 9px 0;
+    }
+}
+.navbar-light .navbar-nav .active > .nav-link{
+    line-height: 0;
+    color: #5A5858;
     font-size: 14px;
     font-weight: bold;
-    position: relative;
-    text-align: center;
+    font-family: Akrobat;
 }
-.list li:after{
+@media (max-width: 991px) {
+    .navbar-light .navbar-nav .active > .nav-link{
+        line-height: normal;
+    }
+}
+.text-center{
+    position: relative;
+}
+.head_list:after{
     display: inline-block;
     content: "";
-    background-color: black;
     width: 1px;
     height: 14px;
+    background-color: #8A8B90;
     position: absolute;
     right: 0;
-    bottom: 5px;
+    bottom: 0;
 }
-.list a{
-    text-decoration: none;
-    color: #5A5858;
-    font-family: Akrobat;
-    font-weight: bold;
+@media (max-width: 991px) {
+    .text-center:after{
+        display: none;
+    }
+}
+.navbar-light .navbar-toggler{
+    background-color: #FFC904;
+    border-radius: 0;
+    margin-left: 20px;
 }
 .screen_one{
     margin-bottom: 50px;
@@ -101,6 +126,12 @@ header .icon i{
     margin-right: auto;
     margin-left: auto;
 }
+@media (max-width: 540px) {
+    .screen_one:after{
+        max-width: 300px;
+        margin-top: 35px;
+    }
+}
 .screen_one h5{
     font-size: 14px;
     color: #2B2B2B;
@@ -108,6 +139,11 @@ header .icon i{
     margin-bottom: 39px;
     font-family: Akrobat;
     font-weight: bold;
+}
+@media (max-width: 414px) {
+    .screen_one h5{
+       margin-bottom: 160px;
+    }
 }
 .screen_one h5:before{
     display: inline-block;
@@ -126,6 +162,13 @@ header .icon i{
     font-family: Akrobat;
     font-weight: bold;
 }
+@media (max-width: 414px) {
+    .screen_one h2{
+        font-size: 16px;
+       position: absolute;
+        top: -522px;
+    }
+}
 .screen_one h3{
     color: #FFC904;
     font-size: 18px;
@@ -133,6 +176,15 @@ header .icon i{
     margin-bottom: 15px;
     font-family: Akrobat;
     font-weight: bold;
+}
+
+@media (max-width: 414px) {
+    .screen_one h3{
+        font-size: 14px;
+       position: absolute;
+        top: -480px;
+    }
+
 }
 form{
     position: relative;
@@ -211,7 +263,7 @@ form img{
     filter: alpha(Opacity=75); /* Полупрозрачность для IE */
     opacity: 0.75; /* Полупрозрачность для других браузеров */
 }
-@media (max-width: 650px) {
+@media (max-width: 767px) {
     form img{
       display: none;
     }
@@ -224,12 +276,26 @@ form img{
     width: 100%;
     margin-bottom: 16px;
 }
-.right p{
+
+@media (max-width: 535px) {
+    .screen_one img{
+        max-width: 199px;
+        width: 100%;
+    }
+
+}
+.right .artroset{
     font-size: 18px;
     color: #2B2B2B;
     font-family: Akrobat;
     font-weight: bold;
     margin-bottom: 35px;
+}
+@media (max-width: 540px) {
+    .right .artroset{
+        font-size: 12px;
+        margin-bottom: 29px;
+    }
 }
 .right p:nth-child(3){
     font-size: 14px;
@@ -237,17 +303,31 @@ form img{
 .right span{
     color: red;
 }
+.screen_one .img_p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Akrobat;
+}
 .screen_two{
+    margin-bottom: 49px;
+}
+.screen_two p{
     font-size: 18px;
     font-family: Akrobat;
     font-weight: 600;
     margin-bottom: 25px;
+}
+@media (max-width: 414px) {
+    .screen_two p{
+        font-size: 12px;
+    }
 }
 .screen_two h4{
     color: #2B2B2B;
     margin-bottom: 14px;
     font-size: 24px;
     font-weight: bold;
+    font-family: Akrobat;
 }
 .screen_two h4:before{
     display: inline-block;
@@ -267,6 +347,12 @@ form img{
     margin-right: auto;
     margin-left: auto;
 }
+@media (max-width: 540px) {
+    .screen_two:after{
+        max-width:300px;
+        margin-top: 45px;
+    }
+}
 @media (max-width: 991px) {
     .screen_two video{
         width: 100%;
@@ -275,6 +361,11 @@ form img{
 }
 .screen_three{
     margin-bottom: 94px;
+}
+@media (max-width: 540px) {
+    .screen_three{
+        margin-bottom: 31px;
+    }
 }
 .screen_three:after{
     display: block;
@@ -285,6 +376,13 @@ form img{
     margin-top: 97px;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media (max-width: 540px) {
+    .screen_three:after{
+        max-width: 300px;
+        margin-top: 37px;
+    }
 }
 .screen_three h2{
     font-size: 24px;
@@ -334,6 +432,11 @@ form img{
 .screen_four{
     margin-bottom: 62px;
 }
+@media (max-width: 540px) {
+    .screen_four{
+        margin-bottom: 34px;
+    }
+}
 .screen_four:after{
     display: block;
     content: "";
@@ -343,6 +446,12 @@ form img{
     margin-top: 154px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 540px) {
+    .screen_four:after{
+        max-width: 300px;
+        margin-top: 28px;
+    }
 }
 .screen_four h2{
     font-size: 24px;
@@ -381,6 +490,17 @@ form img{
     background-color: #FFC904;
     margin-bottom: 62px;
 }
+@media (max-width: 540px) {
+    .screen_four h4:before{
+        display: block;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #FFC904;
+        margin-bottom: 33px;
+        margin-top: 61px;
+    }
+}
 .screen_four p{
     font-size: 24px;
     color: black;
@@ -388,8 +508,22 @@ form img{
     font-family: Akrobat;
     font-weight: 300;
 }
+@media (max-width: 540px) {
+    .screen_four p{
+        font-size: 14px;
+        color: black;
+        margin-bottom: 30px;
+        font-family: Akrobat;
+        font-weight: 300;
+    }
+}
 .screen_four span{
     font-weight: bold;
+}
+@media (max-width: 540px) {
+    .screen_four span{
+        font-size: 20px;
+    }
 }
 .screen_four a{
     font-size: 24px;
@@ -410,6 +544,12 @@ form img{
     position: absolute;
     left: -67px;
 }
+
+@media (max-width: 991px) {
+    .screen_four .owl-nav .owl-prev {
+        left: 0;
+    }
+}
 .screen_four .owl-nav .owl-prev:before {
     content: "\f060";
     font-family: 'Font Awesome 5 Free';
@@ -420,11 +560,16 @@ form img{
     padding: 13px 18px;
 }
 
+
 .screen_four .owl-nav .owl-next {
     position: absolute;
     right: -66px;
 }
-
+@media (max-width: 991px) {
+    .screen_four .owl-nav .owl-next {
+        right: 0;
+    }
+}
 .screen_four .owl-nav .owl-next:before {
     content: "\f061";
     font-family: 'Font Awesome 5 Free';
@@ -449,6 +594,12 @@ form img{
     margin-top: 82px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 540px) {
+    .screen_five:after{
+        max-width: 300px;
+        margin-top: 32px;
+    }
 }
 .screen_five h2{
     font-size: 24px;
@@ -523,6 +674,12 @@ form img{
     margin-right: auto;
     margin-left: auto;
 }
+@media (max-width: 540px) {
+    .screen_six:after{
+        max-width: 300px;
+        margin-top: 54px;
+    }
+}
 .screen_six h2{
     font-size: 24px;
     color: #2B2B2B;
@@ -537,6 +694,10 @@ form img{
     width: 2px;
     background-color: #FFC904;
     margin-right: 15px;
+}
+.screen_six img{
+    max-width: 330px;
+    width: 100%;
 }
 .screen_six .list_three{
     padding: 13px 39px;
@@ -594,6 +755,12 @@ form img{
     margin-right: auto;
     margin-left: auto;
 }
+@media (max-width: 540px) {
+    .screen_seven:after{
+        margin-top: 52px;
+        max-width: 300px;
+    }
+}
 .screen_seven h2{
     font-size: 24px;
     color: #2B2B2B;
@@ -632,6 +799,11 @@ form img{
     padding-left: 44px;
     margin-bottom: 23px;
 }
+@media (max-width: 540px) {
+    .screen_seven p{
+       padding-left: 0;
+    }
+}
 .screen_seven .sertivilat img{
     position: absolute;
     top: -60px;
@@ -660,6 +832,11 @@ form img{
     background-color: #FFC904;
     margin-left: 44px;
 }
+@media (max-width: 540px) {
+    .screen_seven a{
+        margin-left: 0;
+    }
+}
 .screen_seven img{
     max-width: 468px;
     width: 100%;
@@ -676,6 +853,12 @@ form img{
     margin-top: 108px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 540px) {
+    .screen_eight:after{
+        max-width: 300px;
+        margin-top: 61px;
+    }
 }
 .screen_eight h2{
     font-size: 24px;
@@ -706,15 +889,27 @@ form img{
     width: 100%;
     background-color: #FFC904;
 }
+.screen_eight .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+}
+.screen_eight .owl-carousel .owl-item img{
+    max-width: 150px;
+}
 .screen_eight .owl-nav {
     position: absolute;
-    top: 110px;
+    top: 50px;
     width: 100%;
 }
 
 .screen_eight .owl-nav .owl-prev {
     position: absolute;
     left: -67px;
+}
+@media (max-width: 991px) {
+    .screen_eight .owl-nav .owl-prev {
+        left: 0;
+    }
 }
 .screen_eight .owl-nav .owl-prev:before {
     content: "\f060";
@@ -729,6 +924,11 @@ form img{
 .screen_eight .owl-nav .owl-next {
     position: absolute;
     right: -66px;
+}
+@media (max-width: 991px) {
+    .screen_eight .owl-nav .owl-next {
+        right: 0;
+    }
 }
 
 .screen_eight .owl-nav .owl-next:before {
@@ -755,6 +955,15 @@ form img{
     margin-top: 108px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 540px) {
+    .screen_nine:after{
+        max-width: 300px;
+        background-color: #8A8B90;
+        margin-top: 41px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 .screen_nine h2{
     font-size: 24px;
@@ -787,6 +996,27 @@ form img{
 }
 .screen_nine span{
     font-weight: bold;
+}
+.screen_nine p:nth-child(1):before{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #FFC904;
+    margin-bottom: 42px;
+}
+@media (max-width: 767px) {
+    .screen_nine p:nth-child(1):before{
+     display: none;
+    }
+    .screen_nine h4:before{
+        display: block;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #FFC904;
+        margin-bottom: 40px;
+    }
 }
 .screen_nine h4{
     font-size: 18px;
@@ -830,6 +1060,12 @@ form img{
     margin-top: 229px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (max-width: 540px) {
+    .screen_ten:after{
+        max-width: 300px;
+        margin-top: 54px;
+    }
 }
 .screen_ten h2{
     font-size: 24px;
@@ -898,7 +1134,7 @@ footer p{
     font-family: Helvetica;
     margin-bottom: 16px;
 }
-footer a{
+footer .logo{
     color: black;
     font-size: 20px;
     font-weight: bold;
