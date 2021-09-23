@@ -33,10 +33,10 @@ $(document).ready(function(){
                 items:3
             },
             575:{
-                items:2
+                items:1
             },
             414:{
-                items:2
+                items:1
             },
             413:{
                 items:1
