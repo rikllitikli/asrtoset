@@ -386,7 +386,7 @@ form img{
     }
 }
 @media (max-width: 991px) {
-    .screen_two video{
+    .screen_two iframe{
         width: 100%;
         margin-bottom: 20px;
     }
