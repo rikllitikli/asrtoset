@@ -462,9 +462,6 @@ form img{
     max-width: 489px;
     width: 100%;
 }
-.screen_four{
-    margin-bottom: 62px;
-}
 @media (max-width: 540px) {
     .screen_four{
         margin-bottom: 34px;
@@ -616,6 +613,7 @@ form img{
     display: none;
 }
 .screen_five{
+    padding-top: 75px;
     margin-bottom: 41px;
 }
 .screen_five:after{
