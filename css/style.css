@@ -878,6 +878,7 @@ form img{
 }
 .screen_eight{
     margin-bottom: 88px;
+    position: relative;
 }
 .screen_eight:after{
     display: block;
@@ -980,8 +981,32 @@ form img{
     background-color: #FFC904;
     padding: 13px 18px;
 }
-.screen_eight .owl-dots{
-    display: none;
+@media (max-width: 991px) {
+    .owl-drag {
+        text-align: center;
+    }
+
+    .owl-dots {
+        position: relative;
+        bottom: -40px;
+    }
+
+
+    .owl-dot span{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: none;
+        border-radius: 100%;
+        margin-right: 10px;
+        border: solid 1px #FFC904;
+    }
+
+    .owl-dot.active span {
+        background-color:  #FFC904;
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .screen_nine{
