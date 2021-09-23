@@ -170,6 +170,11 @@ header .icon i{
         top: -452px;
     }
 }
+@media (max-width: 357px) {
+    .screen_one h2{
+        top: -467px;
+    }
+}
 @media (max-width: 320px) {
     .screen_one h2{
         font-size: 16px;
@@ -193,6 +198,11 @@ header .icon i{
         top: -400px;
     }
 
+}
+@media (max-width: 357px) {
+    .screen_one h3{
+        top: -415px;
+    }
 }
 @media (max-width: 320px) {
     .screen_one h3{
