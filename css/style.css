@@ -5,6 +5,10 @@
 header{
     padding: 4px 0 8px;
 }
+header img{
+    max-width: 146px;
+    width: 100%;
+}
 header .header{
     max-width: 612px;
 }
@@ -1199,6 +1203,10 @@ form img{
 }
 footer{
     padding: 10px 0;
+}
+footer img{
+    max-width: 146px;
+    width: 100%;
 }
 footer p{
     font-size: 14px;
