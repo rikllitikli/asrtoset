@@ -26,41 +26,6 @@
                     </div>
                     <div>
                         <a href="#0" class="bottom" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-phone-alt"></i>ЗАМОВИТИ ДЗВІНОК</a>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form name="order" action="" method="post">
-                                            <h4>Бажаєте отримати консультацію про препарат ARTROSET ® ?</h4>
-                                            <p>Введіть ваші дані та ми зв’яжемось з Вами протягом
-                                                найближчого часу:</p>
-                                            <div>
-                                                <label>ПІБ</label>
-                                                <input name="name" type="text" placeholder="( Прізвіще, ім’я , по-батькові)">
-                                            </div>
-                                            <div class="tel">
-                                                <label>Ваш телефон:</label>
-                                                <input class="input-roulette" id="input-phone" pattern="^\+38\s[\(][0-9]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}$" name="phone" type="tel" required="" autocomplete="off" placeholder="+38" title="Формат: +38 (0XX) XXX-XX-XX" onclick="(function(event) {
-                                                    if (!event.target.value.length) {
-                                                        event.target.value = '+38';
-                                                    }
-                                                })(event)" oninput="(function(event) {
-                                                    const x = event.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-                                                    event.target.value = '+38' + (x[4] ? ' (' + x[3] + ') ' : '' + x[3]) + x[4] + (x[5] ? '-' + x[5] : '') + (x[6] ? '-' + x[6] : '');
-                                                })(event)">
-                                            </div>
-                                            <button>Замовити</button>
-                                        </form>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             <div class="d-lg-flex justify-content-between icon">
@@ -577,6 +542,41 @@
         </div>
     </div>
 </footer>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="order" action="" method="post">
+                    <h4>Бажаєте отримати консультацію про препарат ARTROSET ® ?</h4>
+                    <p>Введіть ваші дані та ми зв’яжемось з Вами протягом
+                        найближчого часу:</p>
+                    <div>
+                        <label>ПІБ</label>
+                        <input name="name" type="text" placeholder="( Прізвіще, ім’я , по-батькові)">
+                    </div>
+                    <div class="tel">
+                        <label>Ваш телефон:</label>
+                        <input class="input-roulette" id="input-phone" pattern="^\+38\s[\(][0-9]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}$" name="phone" type="tel" required="" autocomplete="off" placeholder="+38" title="Формат: +38 (0XX) XXX-XX-XX" onclick="(function(event) {
+                                                    if (!event.target.value.length) {
+                                                        event.target.value = '+38';
+                                                    }
+                                                })(event)" oninput="(function(event) {
+                                                    const x = event.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                                                    event.target.value = '+38' + (x[4] ? ' (' + x[3] + ') ' : '' + x[3]) + x[4] + (x[5] ? '-' + x[5] : '') + (x[6] ? '-' + x[6] : '');
+                                                })(event)">
+                    </div>
+                    <button>Замовити</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
