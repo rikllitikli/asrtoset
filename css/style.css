@@ -112,10 +112,6 @@ header .icon i{
     border-radius: 0;
     margin-left: 20px;
 }
-.screen_one{
-    margin-bottom: 50px;
-}
-
 .screen_one:after{
     display: block;
     content: "";
@@ -341,6 +337,7 @@ form img{
     font-family: Akrobat;
 }
 .screen_two{
+    padding-top: 65px;
     margin-bottom: 49px;
 }
 .screen_two p{
